@@ -1,0 +1,31 @@
+<h1>Listing reclamos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Empresa</th>
+      <th>Reclamo</th>
+      <th>Rut cliente</th>
+      <th>Cliente</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @reclamos.each do |reclamo| %>
+      <tr>
+        <td><%= reclamo.empresa %></td>
+        <td><%= reclamo.reclamo %></td>
+        <td><%= reclamo.rut_cliente %></td>
+        <td><%= reclamo.cliente %></td>
+        <td><%= link_to 'Show', reclamo %></td>
+        <td><%= link_to 'Edit', edit_reclamo_path(reclamo) %></td>
+        <td><%= link_to 'Destroy', reclamo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Reclamo', new_reclamo_path %>

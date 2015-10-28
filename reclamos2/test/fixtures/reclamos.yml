@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  empresa: MyString
+  reclamo: MyString
+  rut_cliente_id: 
+  cliente: MyString
+
+two:
+  empresa: MyString
+  reclamo: MyString
+  rut_cliente_id: 
+  cliente: MyString
